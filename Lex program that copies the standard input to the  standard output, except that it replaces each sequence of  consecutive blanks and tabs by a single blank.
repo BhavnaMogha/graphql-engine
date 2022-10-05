@@ -1,0 +1,9 @@
+%option main
+
+%%
+
+[ \n\t]+ {fprintf(yyout, " ");}
+
+. { fprintf(yyout, "%s", yytext); }
+
+%%
